@@ -24,7 +24,7 @@ loc = site.getsitepackages()
 root = site.getusersitepackages()
 data_path = loc[0]+'/laserembeddings/data'
 
-gdown_infer = True
+gdown_infer = False
 
 if not os.path.exists(data_path):
     data_path = root+'/laserembeddings/data'
