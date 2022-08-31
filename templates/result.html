@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Prediction</title>
+    <link rel="stylesheet" type="type/css" href="{{url_for('static', filename='css/style.css')}}" </head>
+
+    <body style="background-color:#C0C0C0;">
+	
+		
+        <header>
+            <div class="container">
+                <div id="brandname">
+                    <h2 style="text-align: center;background-color:#D3D3D3;">Multilingual NLP for Islamic Theology</h2>
+                </div>
+                <h1 style="color:green;">Asymmetric Semantic Search Results :  </h1>
+            </div>
+        </header>
+
+        <p style="color:blue;font-size:20;text-align:center;"></p>
+        <h2 style="text-align: center;background-color:khaki;">Top predictions from Holy Quran </h2>
+        <div class="results">
+             {% for index,row in prediction.iterrows() %}
+     		 <p>
+     		 
+     		 <span style="color:red;">Surah : </span>{{(row['Surah']) |int }} 
+     		 
+     		 <span style="color:red;">Ayat : </span> {{(row['Ayat']) |int }}<br/>
+     		 
+     		 <span style="color:green;">Prediction Score : </span>{{row['Score'] }}<br/>
+     		 
+     		 <span style="color:#800000;">Surah Name :</span> {{ row['Name'] }}<br/> 
+     		 
+     		 <span style="color:#800000;">Verse : </span> {{ row['Verse'] }}<br/> 
+     		 
+     		 <span style="color:#800000;">Tafseer :</span> {{ row['Tafseer'] }}<br/> 
+     		 
+     		 <span style="color:#800000;">Arabic Text :</span> {{ row['ar_text'] }}<br/>
+     		 
+     		 <span style="color:#800000;">আল বায়ান : </span> {{ row['আল_বায়ান'] }}<br/> 
+     		 
+     		 <span style="color:#800000;">Tafsir Bayan: </span> {{ row['tafsir_bayan'] }}<br/> <br/> 
+     		 </p>
+	     {% endfor %}
+	     
+	     <h2 style="text-align: center;background-color:khaki;">Top predictions from Sahih Bukhari-Muslim </h2>
+	     {% for index,row in prediction1.iterrows() %}
+     		 <p>
+     		<span style="color:#000080;">Chapter Number: </span>  {{(row['chapter_no']) |int }}<br/>  
+     		 
+     		<span style="color:#000080;">Hadith Number: </span>  {{(row['hadith_no']) |int }}<br/> 
+     		 
+     		<span style="color:#000080;">Hadith Source: </span>  {{ row['source'] }}   <br/> 
+     		
+     		<span style="color:green;">Prediction Score : </span>{{row['Score'] }}<br/>
+     		 
+     		
+     		<span style="color:#000080;">Narrators: </span>  {{ row['narrators'] }}<br/> 
+     		 
+     		<span style="color:#000080;">Chapter: </span>  {{ row['chapter'] }}<br/> <br/> 
+     		 
+     		<span style="color:#000080;">Arabic Hadith: </span>  {{ row['text_ar'] }}<br/> <br/> 
+     		 
+     		<span style="color:#000080;">English Hadith: </span>  {{ row['text_en'] }} <br/> <br/> 
+     		 
+     		<span style="color:#000080;">Bangla Hadith: </span>  {{ row['text_bn'] }} <br/> <br/> 
+     		 
+     		 </p>
+	     {% endfor %}
+     
+        </div>
+
+
+    </body>
+
+</html>

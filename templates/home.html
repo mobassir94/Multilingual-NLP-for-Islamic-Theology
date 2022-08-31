@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css" </head>
+
+    <body style="background-color:#000080;">
+        <header>
+            <div class="container" style="height: 100px;width:600px; margin:0 auto;">
+                <div id="brandname" >Cross Lingual Quran Hadith Search Engine </div>
+                
+            </div>
+        </header>
+
+              
+
+        <div class="ml-container">
+            <form action="{{url_for('predict')}}" method='POST'>
+            
+                
+                <h2 style="background-color:#0000FF;">Enter Your Query Using Your Preferred Language Below : </h2>
+                
+                
+                <textarea name="comment" rows="10" cols="120"></textarea>
+                <br/>
+         
+            <span class="label show_quran_top_results" style="background-color:#ddd;">Show Top Quranic Verses:</span>
+		
+                <select name="show_quran_top_results" id="show_quran_top_results">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		</select>
+		
+		
+		<span class="label show_hadith_top_results" style="background-color:#ddd;">Show Top Hadiths:</span>
+		
+		<select name="show_hadith_top_results" id="show_hadith_top_results">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		  <option value="5">5</option>
+		  <option value="6">6</option>
+		  <option value="7">7</option>
+		  <option value="8">8</option>
+		  <option value="9">9</option>
+		  <option value="10">10</option>
+		</select>
+
+              
+                <button type="submit" name="predict" value="predict"> Predict Similarity using Dot Product </button>
+  		<button type="submit" name="predict1" value="predict1"> Predict Similarity using pairwise euclidean dists </button>
+  
+            </form>
+        </div>
+        <br><br>
+     <span style="background-color:#ddd;"> <STRONG style="color:red;">Supported Languages: </STRONG> <br> Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Belarusian, Bengali, Berber languages, Bosnian, Breton, Bulgarian, Burmese, Catalan, Central/Kadazan Dusun, Central Khmer, Chavacano, Chinese, Coastal Kadazan, Cornish, Croatian, Czech, Danish, Dutch, Eastern Mari, English, Esperanto, Estonian, Finnish, French, Galician, Georgian, German, Greek, Hausa, Hebrew, Hindi, Hungarian, Icelandic, Ido, Indonesian, Interlingua, Interlingue, Irish, Italian, Japanese, Kabyle, Kazakh, Korean, Kurdish, Latvian, Latin, Lingua Franca Nova, Lithuanian, Low German/Saxon, Macedonian, Malagasy, Malay, Malayalam, Maldivian (Divehi), Marathi, Norwegian (Bokmål), Occitan, Persian (Farsi), Polish, Portuguese, Romanian, Russian, Serbian, Sindhi, Sinhala, Slovak, Slovenian, Somali, Spanish, Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar, Telugu, Thai, Turkish, Uighur, Ukrainian, Urdu, Uzbek, Vietnamese, Wu Chinese and Yue Chinese. </span
+            
+
+    </body>
+
+</html>
