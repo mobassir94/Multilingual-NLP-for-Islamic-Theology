@@ -47,6 +47,8 @@ then,
 2. https://arxiv.org/ftp/arxiv/papers/2207/2207.04672.pdf
 3. https://github.com/alizahidraja/QURAN-NLP
 
+"Everything is easy until you work for it" ☺
+
 # Acknowledgments
 
 1. Apsis Solutions Ltd.
