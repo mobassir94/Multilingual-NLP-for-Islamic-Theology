@@ -1,5 +1,6 @@
 # Multilingual-NLP-for-Islamic-Theology
-Cross Lingual  sentence embeddings for making search engines for Holy Quran and Sahih Hadiths
+
+This is a Data Driven Theological App that uses Cross Lingual  sentence embeddings for making search engines for Holy Quran and Sahih Hadiths
 
 # Understanding the problem
 
@@ -23,17 +24,22 @@ Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Bel
 
 # How to install the app?
 
-go to terminal and cd to the root directory of this project,then
-!pip install -r requirements.txt (make sure no error occured)
-then,
-python app.py
+1. go to terminal and cd to the root directory of this project,then
 
-then,go to browser and hit -> http://127.0.0.1:33507/
+2. !pip install -r requirements.txt (make sure no error occured)
+then,
+
+3. from this google drive link -> https://drive.google.com/drive/folders/1Zw64MRFvQxxwDLYFTdNki7HwNQOM30gy?usp=sharing download these 7 files and store them in assets folder
+
+4. python app.py
+
+5. Now,go to browser and hit -> http://127.0.0.1:33507/
 
 # Future Goals
 
 1. Replace laser2 with laser3
 2. improve bangla translation quality with a bangla spell-checker
+3. Data Driven Similarity checking between Quran and Bible
 
 # References
 
