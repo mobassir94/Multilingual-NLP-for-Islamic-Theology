@@ -13,10 +13,11 @@ Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Bel
 
 # Solution/Pipeline
 
-1. we process bangla and english quran with tafsir and sahih bukhari-muslim dataset here -> https://www.kaggle.com/datasets/mobassir/bangla-quran-with-tafsir and here -> https://www.kaggle.com/datasets/mobassir/en-bn-sahih-bukhari-muslim the code used for scraping bangla translated quran and tafsir can be found here -> https://github.com/mnansary/hadith-srcapper
-2. Number of bukhari-muslim hadiths and chapters compiled in english language is different in number than bangla compiled hadith version,for that reason we couldn't use english and bangla human translated hadith's together for our task as number of rows are different (hadith orders are different).that's why we translate english hadith's into bangla using meta's nllb-200-1.3B model (ref -> https://ai.facebook.com/research/no-language-left-behind/). code used for english to bangla hadith translation can be found here -> https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/nllb_en_bn_translator.ipynb
+1. We process bangla and english [Quran with tafsir](https://www.kaggle.com/datasets/mobassir/bangla-quran-with-tafsir) and [sahih bukhari-muslim](https://www.kaggle.com/datasets/mobassir/en-bn-sahih-bukhari-muslim) dataset. The code used for scraping bangla translated quran and tafsir can be found here in [Hadith Scrapper](https://github.com/mnansary/hadith-srcapper)
 
-3. we create multilingual laser embeddings(let's call it corpus embedding) in this directory -> https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/tree/main/create%20laserembeddings to learn more about facebook's laser read this -> https://engineering.fb.com/2019/01/22/ai-research/laser-multilingual-sentence-embeddings/
+2. Number of bukhari-muslim hadiths and chapters compiled in english language is different in number than bangla compiled hadith version,for that reason we couldn't use english and bangla human translated hadith's together for our task as number of rows are different (hadith orders are different) among them.that's why we translate english hadiths into bangla using [meta's nllb-200-1.3B model](https://ai.facebook.com/research/no-language-left-behind/). code used for english to bangla hadith translation can be found [here](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/nllb_en_bn_translator.ipynb)
+
+3. we create multilingual laser embeddings(let's call it corpus embedding) in this [directory](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/tree/main/create%20laserembeddings) to learn more about [facebook's laser](https://engineering.fb.com/2019/01/22/ai-research/laser-multilingual-sentence-embeddings/).
 
 4. Our flask app  takes user's multilingual input,then converts user query into laser embedding(let's call it query embedding)
 
