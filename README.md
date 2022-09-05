@@ -49,7 +49,7 @@ then,
 
 "Everything is easy until you work for it" ☺
 
-# Acknowledgments
+# Acknowledgements
 
 1. Apsis Solutions Ltd.
 2. bengali.ai
