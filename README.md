@@ -17,7 +17,7 @@ Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Bel
 
 2. Number of bukhari-muslim hadiths and chapters compiled in english language is different in number than bangla compiled hadith version,for that reason we couldn't use english and bangla human translated hadith's together for our task as number of rows are different (hadith orders are different) among them.that's why we translate english hadiths into bangla using [meta's nllb-200-1.3B model](https://ai.facebook.com/research/no-language-left-behind/). code used for english to bangla hadith translation can be found [here](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/nllb_en_bn_translator.ipynb)
 
-3. we create multilingual laser embeddings(let's call it corpus embedding) in this [directory](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/tree/main/create%20laserembeddings) to learn more about [facebook's laser](https://engineering.fb.com/2019/01/22/ai-research/laser-multilingual-sentence-embeddings/).
+3. we create multilingual laser embeddings using  [facebook's laser](https://engineering.fb.com/2019/01/22/ai-research/laser-multilingual-sentence-embeddings/). (let's call it corpus embedding) in this [directory](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/tree/main/create%20laserembeddings)
 
 4. Our flask app  takes user's multilingual input,then converts user query into laser embedding(let's call it query embedding)
 
