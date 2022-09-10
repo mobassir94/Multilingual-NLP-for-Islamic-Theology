@@ -36,6 +36,31 @@ then,
 
 5. Now,go to browser and hit -> http://127.0.0.1:33507/
 
+# limitations/ cautions
+
+1. This is not a question answering system,hence it won't give explicit answer for questions (Question-Answering System needs labeled dataset,which is currently 
+missing for Holy Quran and Hadith.)
+
+2. The system tries to predict closest verse or hadith for your query using some mathematical/statistical process. So predicted answer won't be always right.
+
+3. If the user query contains spelling mistake or incorrect words then predictions of the system is expected to be wrong for most of the times.
+
+4. if the users query contains irrelevant words and doesn't come closer to any ayat or hadith in terms of semantic similarity then the system will provide wrong results.
+
+5. Most of the times Pairwise Euclidean metric provides better results than dot product metric.
+
+6. This system can't consider the domain of the Query.
+
+7. Higher Prediction Score indicates higher similarity,if prediction score for your query is small,then try to use different keywords/queries instead
+
+8. Bangla Hadiths were translated using powerful Language Model, but still some translations can contain spelling mistakes.
+
+9. Predicted results might not always give you appropriate results for your input query,but most of the times it will try to output something that contains words or
+keywords that are very close to your input query.
+
+10. This is a zero Shot learning approach because we are lacking labeled dataset for this task,to improve performance of this system,one need to further finetune LASER.
+
+
 # Future Goals
 
 1. Replace laser2 with laser3
