@@ -34,6 +34,8 @@ English and Bangla only
 
 5. using dot product or pairwise euclidean distance metric measure, we retrive top n (n is user input here, ranges from 1-10) similar rows from our corpus embedding that are closest to query embedding/user's input
 
+[COLAB DEMO](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/Inference_Multilingual_Islamic_Theology.ipynb)
+
 # How to install the app?
 
 1. go to terminal and cd to the root directory of this project,then
