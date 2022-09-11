@@ -77,6 +77,10 @@ keywords that are very close to your input query.
 10. This is a zero Shot learning approach because we are lacking labeled dataset for this task,to improve performance of this system,one need to further finetune LASER.
 
 
+# Disclaimer
+
+The research project that we are sharing here is the babystep towards the data driven theological research direction,the original problem that we tried to solve and couldn’t solve yet is very complex So at this stage,don’t expect it to run perfectly,it still makes many mistakes and it will take time for improvement and also needs mass collaboration to improve the performance of it even further. 
+
 # Future Goals
 
 1. Replace laser2 with laser3
