@@ -35,6 +35,6 @@ def predict():
     return render_template('result.html', prediction=mlt_quran,prediction1=mlt_hadiths)
 
 if __name__ == '__main__':
-    app.run(debug=True, port=33507)
+    app.run(debug=False, port=33507)
 
 
