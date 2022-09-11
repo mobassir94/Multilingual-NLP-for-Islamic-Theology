@@ -6,10 +6,12 @@ This is a Data Driven Theological App that uses Cross Lingual  sentence embeddin
 
 The aim of this project is to develop a search engine that will take input query for Holy Quran and Sahih Hadiths from any language like arabic,hindi,bangla,english etc (it also supports code mixed language input like mixture of english and arabic in input query) and provide output in english and in bangla language separately. this is an asymmetric semantic search problem.means, you usually have a short query (like a question or some keywords) and you want to find a longer paragraph answering the query. 
 
-# Supported Languages:
+# Supported Input Languages:
 
 Afrikaans, Albanian, Amharic, Arabic, Armenian, Aymara, Azerbaijani, Basque, Belarusian, Bengali, Berber languages, Bosnian, Breton, Bulgarian, Burmese, Catalan, Central/Kadazan Dusun, Central Khmer, Chavacano, Chinese, Coastal Kadazan, Cornish, Croatian, Czech, Danish, Dutch, Eastern Mari, English, Esperanto, Estonian, Finnish, French, Galician, Georgian, German, Greek, Hausa, Hebrew, Hindi, Hungarian, Icelandic, Ido, Indonesian, Interlingua, Interlingue, Irish, Italian, Japanese, Kabyle, Kazakh, Korean, Kurdish, Latvian, Latin, Lingua Franca Nova, Lithuanian, Low German/Saxon, Macedonian, Malagasy, Malay, Malayalam, Maldivian (Divehi), Marathi, Norwegian (Bokmål), Occitan, Persian (Farsi), Polish, Portuguese, Romanian, Russian, Serbian, Sindhi, Sinhala, Slovak, Slovenian, Somali, Spanish, Swahili, Swedish, Tagalog, Tajik, Tamil, Tatar, Telugu, Thai, Turkish, Uighur, Ukrainian, Urdu, Uzbek, Vietnamese, Wu Chinese and Yue Chinese.
 
+# Supported Output Languages:
+English and Bangla only
 
 # Solution/Pipeline
 
