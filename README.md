@@ -84,8 +84,9 @@ The research project that we are sharing here is the babystep towards the data d
 # Future Goals
 
 1. Replace laser2 with laser3
-2. improve bangla translation quality with a bangla spell-checker
+2. Improve bangla translation quality with a bangla spell-checker
 3. Data Driven Similarity checking between Quran and Bible
+4. Replace dot product with [xSIM metric](https://github.com/facebookresearch/LASER/blob/main/source/xsim.py#L33)
 
 # References
 
