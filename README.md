@@ -36,6 +36,9 @@ English and Bangla only
 
 [COLAB DEMO](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/Inference_Multilingual_Islamic_Theology.ipynb)
 
+# *** UPDATE ***
+4/4/2023 : added efficient sentence transformers and faiss based pipeline demo -> [sentence-transformers-mlt-quran-hadith-search.ipynb](https://github.com/mobassir94/Multilingual-NLP-for-Islamic-Theology/blob/main/demo_notebooks/sentence-transformers-mlt-quran-hadith-search.ipynb)
+
 # How to install the app?
 
 1. go to terminal and cd to the root directory of this project,then
